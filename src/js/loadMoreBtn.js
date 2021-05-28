@@ -1,4 +1,4 @@
-export default class LoadMoreBtn {
+class LoadMoreBtn {
   constructor({ selector, hidden = false }) {
     this.refs = this.getRefs(selector);
 
@@ -36,3 +36,10 @@ export default class LoadMoreBtn {
     this.refs.button.classList.add('is-hidden');
   }
 }
+
+const loadMoreBtn = new LoadMoreBtn({
+  selector: '.load',
+  hidden: true,
+});
+
+export default loadMoreBtn;
